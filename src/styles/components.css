@@ -44,6 +44,7 @@
   background-color: var(--color-danger);
   color: var(--color-white);
   box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
+  
 }
 
 .btn-danger:hover:not(:disabled) {
@@ -471,3 +472,4 @@
     max-width: none;
   }
 }
+
