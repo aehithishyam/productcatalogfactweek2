@@ -47,7 +47,6 @@ function createForm(product: Product): FormState {
 }
 
 const EditProductModal = ({ isOpen, product, onClose, onSave }: Props) => {
-
   const [form, setForm] = useState<FormState>(() =>
     product ? createForm(product) : emptyForm
   );
@@ -152,4 +151,5 @@ function Input({
       />
     </div>
   );
+
 }
