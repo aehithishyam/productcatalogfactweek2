@@ -5,7 +5,6 @@ import type { Product } from '../types';
 interface ProductGridProps {
   products: Product[];
 }
-
 const ProductGrid = memo(function ProductGrid({ products }: ProductGridProps) {
   return (
     <div className="product-grid">
@@ -17,3 +16,4 @@ const ProductGrid = memo(function ProductGrid({ products }: ProductGridProps) {
 });
 
 export default ProductGrid;
+
