@@ -5,7 +5,6 @@ interface SearchBarProps {
   onChange: (value: string) => void;
   placeholder?: string;
 }
-
 const SearchBar = memo(function SearchBar({ value, onChange, placeholder = 'Search products...' }: SearchBarProps) {
   return (
     <div className="catalog-search">
@@ -27,3 +26,4 @@ const SearchBar = memo(function SearchBar({ value, onChange, placeholder = 'Sear
 });
 
 export default SearchBar;
+
