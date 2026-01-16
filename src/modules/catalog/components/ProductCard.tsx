@@ -23,6 +23,7 @@ const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
           </span>
         )}
       </div>
+      
       <div className="product-card-body">
         <span className="product-card-category">{product.category}</span>
         <h3 className="product-card-title">{product.title}</h3>
@@ -55,3 +56,4 @@ const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
 });
 
 export default ProductCard;
+
