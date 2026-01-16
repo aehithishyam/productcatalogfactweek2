@@ -41,7 +41,6 @@ const FilterPanel = memo(function FilterPanel({
           {isExpanded ? '−' : '+'}
         </button>
       </header>
-
       {isExpanded && (
         <div className="filter-panel-body">
           <div className="filter-group">
@@ -110,3 +109,4 @@ const FilterPanel = memo(function FilterPanel({
 });
 
 export default FilterPanel;
+
