@@ -25,7 +25,6 @@ interface ProductCatalogPageProps {
 
 function ProductCatalogPage({ showNotification }: ProductCatalogPageProps) {
   const { products, categories, isLoading, error, refetch } = useProducts();
-
   const [filters, setFilters] = useState<ProductFilters>(DEFAULT_FILTERS);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_BATCH);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
@@ -322,3 +321,4 @@ function ProductCatalogPage({ showNotification }: ProductCatalogPageProps) {
 }
 
 export default ProductCatalogPage;
+
