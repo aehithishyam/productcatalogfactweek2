@@ -10,7 +10,6 @@ interface Props {
 const AddProductModal = ({ isOpen, onClose, onAdd }: Props) => {
   const [title, setTitle] = useState('');
   const [price, setPrice] = useState('');
-
   const [description, setDescription] = useState('');
   const [rating, setRating] = useState('0');
   const [brand, setBrand] = useState('');
@@ -173,3 +172,4 @@ const AddProductModal = ({ isOpen, onClose, onAdd }: Props) => {
 };
 
 export default AddProductModal;
+
