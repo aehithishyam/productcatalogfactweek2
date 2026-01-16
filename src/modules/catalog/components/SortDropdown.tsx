@@ -25,6 +25,7 @@ const SortDropdown = memo(function SortDropdown({
         <option value="price">Price</option>
         <option value="rating">Rating</option>
       </select>
+      
       <button
         className="catalog-sort-order"
         onClick={() => onSortOrderChange(sortOrder === 'asc' ? 'desc' : 'asc')}
@@ -37,3 +38,4 @@ const SortDropdown = memo(function SortDropdown({
 });
 
 export default SortDropdown;
+
