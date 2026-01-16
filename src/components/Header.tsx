@@ -16,5 +16,5 @@ function Header({ title }: HeaderProps) {
     </header>
   );
 }
-
 export default Header;
+
