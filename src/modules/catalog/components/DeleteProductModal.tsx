@@ -14,7 +14,6 @@ function DeleteProductModal({ isOpen, products, onClose, onDelete, onEdit }: Pro
   return (
     <div className="modal-overlay">
       <div className="modal">
-
         <div className="modal-header">
           <h3 className="modal-title">Manage Products</h3>
           <button className="modal-close" onClick={onClose}>×</button>
@@ -70,3 +69,4 @@ function DeleteProductModal({ isOpen, products, onClose, onDelete, onEdit }: Pro
 }
 
 export default DeleteProductModal;
+
