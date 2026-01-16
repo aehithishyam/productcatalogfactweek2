@@ -7,7 +7,6 @@ export function useInfiniteScroll(onLoadMore: () => void, hasMore: boolean) {
   const triggerRef = useCallback(
     (node: HTMLDivElement | null) => {
       if (!hasMore) return;
-
       if (observer.current) observer.current.disconnect();
 
       observer.current = new IntersectionObserver(
@@ -33,3 +32,4 @@ export function useInfiniteScroll(onLoadMore: () => void, hasMore: boolean) {
 
   return triggerRef;
 }
+
