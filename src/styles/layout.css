@@ -1,0 +1,123 @@
+.app-layout {
+  display: grid;
+  grid-template-rows: var(--header-height) 1fr;
+  grid-template-areas:
+    "header"
+    "main";
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  height: var(--header-height);
+
+  /* Two color shades + image */
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15, 118, 110, 0.85),
+      rgba(6, 12, 42, 0.85)
+    );
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: none;
+  padding: 0 var(--spacing-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffffff, #a5f3fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.header-subtitle {
+  font-style: italic;
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 2px;
+  letter-spacing: 0.3px;
+  align-self: flex-end;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.header-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--border-radius-full);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.main-content {
+  grid-area: main;
+  padding: var(--spacing-2xl);
+  overflow-y: auto;
+  height: 100%;
+  background-color: var(--color-slate-100);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: var(--text-xl);
+  cursor: pointer;
+  padding: var(--spacing-sm);
+  color: var(--color-slate-600);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-fast);
+}
+
+.mobile-menu-btn:hover {
+  background-color: var(--color-slate-100);
+  color: var(--color-slate-900);
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+  
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content {
+    padding: var(--spacing-lg);
+  }
+
+  .header {
+    padding: 0 var(--spacing-lg);
+  }
+}
