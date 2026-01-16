@@ -15,7 +15,6 @@ export function useProducts() {
       abortControllerRef.current.abort();
     }
     abortControllerRef.current = new AbortController();
-
     setIsLoading(true);
     setError(null);
 
@@ -54,3 +53,4 @@ export function useProducts() {
 
   return { products, categories, isLoading, error, refetch: fetchProducts };
 }
+
