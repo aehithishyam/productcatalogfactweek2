@@ -17,5 +17,5 @@ function Notification({ message, type, onClose }: NotificationProps) {
     </div>
   );
 }
-
 export default Notification;
+
