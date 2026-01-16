@@ -30,7 +30,6 @@ function App() {
   return (
     <div className="app-layout">
       <Header title="Uni Mart Shopping" />
-
       <main className="main-content">
         <ProductCatalogPage showNotification={showNotification} />
       </main>
