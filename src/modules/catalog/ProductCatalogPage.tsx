@@ -30,6 +30,7 @@ function ProductCatalogPage({ showNotification }: ProductCatalogPageProps) {
   const [isLoadingMore, setIsLoadingMore] = useState(false);
 
   // Local state
+  
   const [localProducts, setLocalProducts] = useState<Product[]>(() => {
   const stored = localStorage.getItem(LOCAL_PRODUCTS_KEY);
     return stored ? JSON.parse(stored) : [];
